@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ribe Tamiša kontakt, reka Tamiš, slatkovodne ribe">
+    <meta name="description" content="Kontaktirajte nas pitanjima i predlozima o slatkovodnim ribama reke Tamiš.">
+    <title>Kontakt | Ribe reke Tamiš</title>
+    <link rel="stylesheet" href="css/stilovi.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/pristupacnost.js" defer></script>
+</head>
+<body>
+    <header class="zaglavlje">
+        <div class="zaglavlje-sadrzaj">
+            <a class="logo" href="pocetna.html">
+    <img src="slike/logo-ribe.png" alt="">
+    <span>Ribe Tamiša</span>
+</a>
+
+            <button class="dugme-meni" type="button"
+                    aria-label="Otvori meni" aria-expanded="false"
+                    aria-controls="glavni-meni">☰</button>
+
+            <nav id="glavni-meni" class="glavni-meni" aria-label="Glavna navigacija">
+                <a href="pocetna.html">Početna</a>
+                <a href="o-nama.html">O nama</a>
+
+                <div class="padajuci-meni">
+                    <a href="vrste-riba.html">Vrste riba</a>
+                    <button class="dugme-podmeni" type="button"
+                            aria-label="Prikaži grupe riba" aria-expanded="false">▾</button>
+                    <div class="podmeni">
+                        <a href="vrste-riba.html#grabljivice">Grabljivice</a>
+                        <a href="vrste-riba.html#mirne-ribe">Mirne ribe</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html" aria-current="page">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="podesavanja" aria-label="Podešavanja prikaza">
+        <button id="promeni-temu" type="button">Tamna tema</button>
+        <label for="velicina-fonta">Veličina teksta:</label>
+        <select id="velicina-fonta">
+            <option value="manji">Manji</option>
+            <option value="normalan">Normalan</option>
+            <option value="veci">Veći</option>
+        </select>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-tekst">
+                <p class="nadnaslov">Pitanja i predlozi</p>
+                <h1>Kontakt</h1>
+                <p>Piši nam ako imaš pitanje o sadržaju sajta ili predlog za novu temu.</p>
+            </div>
+        </section>
+
+        <section class="sekcija" aria-labelledby="naslov-forme">
+            <div class="kontejner">
+                <h2 id="naslov-forme">Pošalji poruku</h2>
+
+                <form id="kontakt-forma">
+                    <div class="polje-forme">
+                        <label for="ime">Ime i prezime</label>
+                        <input id="ime" name="ime" type="text"
+                               required minlength="2" maxlength="80"
+                               autocomplete="name">
+                        <small class="greska" id="greska-ime"></small>
+                    </div>
+
+                    <div class="polje-forme">
+                        <label for="email">Email adresa</label>
+                        <input id="email" name="email" type="email"
+                               required autocomplete="email">
+                        <small class="greska" id="greska-email"></small>
+                    </div>
+
+                    <div class="polje-forme">
+                        <label for="tema">Tema</label>
+                        <input id="tema" name="tema" type="text"
+                               required minlength="3" maxlength="100">
+                        <small class="greska" id="greska-tema"></small>
+                    </div>
+
+                    <div class="polje-forme">
+                        <label for="poruka">Poruka</label>
+                        <textarea id="poruka" name="poruka" rows="6"
+                                  required minlength="10" maxlength="1000"></textarea>
+                        <small class="greska" id="greska-poruka"></small>
+                    </div>
+
+                    <button class="dugme-forme" type="submit">Proveri poruku</button>
+                    <p id="status-forme" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="sekcija sekcija-istaknuta" aria-labelledby="naslov-mape">
+            <div class="kontejner">
+                <h2 id="naslov-mape">Tamiš na mapi</h2>
+                <p>Pogledaj područje reke Tamiš kod Pančeva.</p>
+
+                <iframe
+                    class="mapa"
+                    title="Google mapa reke Tamiš kod Pančeva"
+                    src="https://www.google.com/maps?q=reka%20Tami%C5%A1%20Pan%C4%8Devo&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="podnozje">
+        <div class="kontejner">
+            <p>© <span id="godina"></span> Ribe reke Tamiš</p>
+        </div>
+    </footer>
+</body>
+</html>

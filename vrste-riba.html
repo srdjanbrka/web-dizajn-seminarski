@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="vrste riba Tamiša, šaran, som, štuka, smuđ, deverika, slatkovodne ribe">
+    <meta name="description" content="Upoznajte slatkovodne ribe koje žive u Tamišu: šarana, soma, štuku, smuđa i deveriku.">
+    <title>Vrste riba | Ribe reke Tamiš</title>
+    <link rel="stylesheet" href="css/stilovi.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/pristupacnost.js" defer></script>
+</head>
+<body>
+    <header class="zaglavlje">
+        <div class="zaglavlje-sadrzaj">
+            <a class="logo" href="pocetna.html">
+    <img src="slike/logo-ribe.png" alt="">
+    <span>Ribe Tamiša</span>
+</a>
+
+            <button class="dugme-meni" type="button"
+                    aria-label="Otvori meni" aria-expanded="false"
+                    aria-controls="glavni-meni">☰</button>
+
+            <nav id="glavni-meni" class="glavni-meni" aria-label="Glavna navigacija">
+                <a href="pocetna.html">Početna</a>
+                <a href="o-nama.html">O nama</a>
+
+                <div class="padajuci-meni">
+                    <a href="vrste-riba.html" aria-current="page">Vrste riba</a>
+                    <button class="dugme-podmeni" type="button"
+                            aria-label="Prikaži grupe riba" aria-expanded="false">▾</button>
+                    <div class="podmeni">
+                        <a href="vrste-riba.html#grabljivice">Grabljivice</a>
+                        <a href="vrste-riba.html#mirne-ribe">Mirne ribe</a>
+                    </div>
+                </div>
+
+                <a href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="podesavanja" aria-label="Podešavanja prikaza">
+        <button id="promeni-temu" type="button">Tamna tema</button>
+        <label for="velicina-fonta">Veličina teksta:</label>
+        <select id="velicina-fonta">
+            <option value="manji">Manji</option>
+            <option value="normalan">Normalan</option>
+            <option value="veci">Veći</option>
+        </select>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-tekst">
+                <p class="nadnaslov">Život ispod površine</p>
+                <h1>Vrste riba Tamiša</h1>
+                <p>Upoznaj neke od riba koje naseljavaju reku i saznaj po čemu su prepoznatljive.</p>
+            </div>
+        </section>
+
+        <section class="sekcija" id="grabljivice" aria-labelledby="naslov-grabljivice">
+            <div class="kontejner">
+                <h2 id="naslov-grabljivice">Grabljivice</h2>
+
+                <div class="kartice">
+                    <article class="kartica">
+                        <img src="slike/som.jpg" alt="Som u slatkoj vodi" loading="lazy">
+                        <h3>Som</h3>
+                        <p>Som je velika slatkovodna riba prepoznatljiva po širokoj glavi i dugim brkovima. Često boravi pri dnu vode.</p>
+                    </article>
+
+                    <article class="kartica">
+                        <img src="slike/stuka.jpg" alt="Štuka izduženog tela" loading="lazy">
+                        <h3>Štuka</h3>
+                        <p>Štuka ima izduženo telo i snažne čeljusti. Kao grabljivica, lovi druge ribe iz zasede.</p>
+                    </article>
+
+                    <article class="kartica">
+                        <img src="slike/smudj.jpg" alt="Smuđ u slatkovodnom staništu" loading="lazy">
+                        <h3>Smuđ</h3>
+                        <p>Smuđ je grabljiva riba izduženog tela. Hrani se manjim ribama i prepoznatljiv je po leđnim perajima.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sekcija sekcija-istaknuta" id="mirne-ribe"
+                 aria-labelledby="naslov-mirne-ribe">
+            <div class="kontejner">
+                <h2 id="naslov-mirne-ribe">Mirne ribe</h2>
+
+                <div class="kartice">
+                    <article class="kartica">
+                        <img src="slike/saran.jpeg" alt="Šaran u slatkoj vodi" loading="lazy">
+                        <h3>Šaran</h3>
+                        <p>Šaran je česta slatkovodna riba. Hranu uglavnom traži pri dnu, među vodenim biljem i sedimentom.</p>
+                    </article>
+
+                    <article class="kartica">
+                        <img src="slike/deverika.jpg" alt="Deverika spljoštenog tela" loading="lazy">
+                        <h3>Deverika</h3>
+                        <p>Deverika ima visoko, bočno spljošteno telo. Često se kreće u jatima i hrani se sitnim organizmima.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="sekcija" aria-labelledby="naslov-multimedija">
+            <div class="kontejner">
+                <h2 id="naslov-multimedija">Multimedija</h2>
+                <p>Video i dodatni materijali za upoznavanje života u slatkoj vodi.</p>
+
+                <h3>Video o slatkovodnim ribama</h3>
+                <video controls preload="metadata" width="720">
+                    <source src="video/ribe-tamisa.mp4" type="video/mp4">
+                    Tvoj pregledač ne podržava prikaz videa.
+                </video>
+
+                <h3>Vodič kroz vrste riba</h3>
+                <p>
+                    <a href="dokumenti/vodic-kroz-ribe.pdf" target="_blank"
+                       rel="noopener noreferrer">
+                        Otvori PDF vodič kroz vrste riba
+                    </a>
+                </p>
+
+                <h3>YouTube video</h3>
+                <iframe
+                    class="youtube-video"
+                    src="https://www.youtube.com/embed/m7qCZryL3Bk"
+                    title="YouTube video o slatkovodnim ribama"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="podnozje">
+        <div class="kontejner">
+            <p>© <span id="godina"></span> Ribe reke Tamiš</p>
+        </div>
+    </footer>
+</body>
+</html>

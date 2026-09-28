@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="reka Tamiš, ribe Tamiša, slatkovodni ekosistem, očuvanje prirode">
+    <meta name="description" content="Saznajte više o sajtu posvećenom slatkovodnim ribama reke Tamiš i značaju očuvanja njihovih staništa.">
+    <title>O nama | Ribe reke Tamiš</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/pristupacnost.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+            <div class="container">
+<a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2"
+   href="pocetna.html">
+    <img src="slike/logo-ribe.png" width="56" height="36" alt="">
+    <span>Ribe Tamiša</span>
+</a>
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#bootstrapMeni"
+                        aria-controls="bootstrapMeni" aria-expanded="false"
+                        aria-label="Otvori meni">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="bootstrapMeni">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="pocetna.html">Početna</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="o-nama.html">O nama</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="vrste-riba.html"
+                               role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">Vrste riba</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="vrste-riba.html">
+                                        Sve vrste
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="vrste-riba.html#grabljivice">
+                                        Grabljivice
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="vrste-riba.html#mirne-ribe">
+                                        Mirne ribe
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-3">
+        <div class="d-flex flex-wrap justify-content-end align-items-center gap-2">
+            <button id="promeni-temu" type="button" class="btn btn-outline-primary">
+                Tamna tema
+            </button>
+
+            <label for="velicina-fonta" class="form-label mb-0">
+                Veličina teksta:
+            </label>
+            <select id="velicina-fonta" class="form-select w-auto">
+                <option value="manji">Manji</option>
+                <option value="normalan">Normalan</option>
+                <option value="veci">Veći</option>
+            </select>
+        </div>
+    </div>
+
+    <main>
+        <section class="bg-primary text-white py-5">
+            <div class="container py-4">
+                <p class="text-uppercase fw-semibold">O projektu</p>
+                <h1 class="display-4 fw-bold">O nama i reci Tamiš</h1>
+                <p class="lead col-lg-8 mb-0">
+                    Ovaj sajt predstavlja neke od slatkovodnih riba Tamiša
+                    i približava posetiocima život u reci.
+                </p>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="fw-bold mb-3">Zašto smo napravili sajt?</h2>
+                    <p>
+                        Želeli smo da na jednom mestu predstavimo ribe koje
+                        se mogu sresti u Tamišu. Kroz kratke opise, fotografije
+                        i multimedijalni sadržaj, posetioci mogu lakše da
+                        upoznaju raznovrsnost slatkovodnog sveta.
+                    </p>
+                    <p>
+                        Sajt je namenjen svima koji vole prirodu i žele da
+                        nauče nešto više o ribama i njihovim staništima.
+                    </p>
+                    <a class="btn btn-primary" href="vrste-riba.html">
+                        Pogledaj vrste riba
+                    </a>
+                </div>
+
+                <div class="col-lg-5">
+                    <img src="slike/tamis.jpg"
+                         class="img-fluid rounded shadow"
+                         alt="Pogled na reku Tamiš"
+                         loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-body-tertiary py-5">
+            <div class="container">
+                <h2 class="fw-bold mb-4">Šta možeš da istražiš?</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Ribe Tamiša</h3>
+                                <p class="card-text">
+                                    Upoznaj osobine pojedinih vrsta i razlike
+                                    između grabljivica i mirnih riba.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Život u vodi</h3>
+                                <p class="card-text">
+                                    Otkrij kako različita staništa u reci
+                                    pružaju uslove za život riba.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col">
+                        <article class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Očuvanje prirode</h3>
+                                <p class="card-text">
+                                    Čista voda i očuvana obala važni su
+                                    za živi svet reke.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-top bg-body py-4">
+        <div class="container text-center text-body-secondary">
+            <p class="mb-0">© <span id="godina"></span> Ribe reke Tamiš</p>
+        </div>
+    </footer>
+</body>
+</html>
